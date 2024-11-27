@@ -57,3 +57,18 @@ header .cart-icons i {
     font-size: 20px;
     cursor: pointer;
 }
+
+a.back-to-home {
+    margin-top: 140px; /* Adjust margin as needed (e.g., 20px from all sides) */
+    margin-left: 20px;
+    color: #ff6f3c; /* Customize the text color */
+    text-decoration: none; /* Removes the underline */
+    font-weight: bold; /* Makes the text bold */
+    font-size: 16px; /* Adjust the font size */
+}
+
+a.back-to-home:hover {
+    text-decoration: underline; /* Add an underline on hover */
+    color: #ff3c1e; /* Darken the color slightly on hover */
+}
+

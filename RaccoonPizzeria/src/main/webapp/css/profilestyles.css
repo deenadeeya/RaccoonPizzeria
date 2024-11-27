@@ -1,31 +1,48 @@
-/* Custom background color for container */
-		.custom-card {
-            background-color: #ffdd93;; 
-        }
-        
-        /* Profile container styling */
-        .profile-container {
-            margin-top: 0px;
-            text-align: center;
-        }
-        
-        /* Profile image style */
-        .profile-container img.profile-image {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            border: 3px solid #ddd;
-            margin-bottom: 10px;
-        }
+/* Center the container both horizontally and vertically */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .back-button {
-   			position: absolute;
-    		left: 10px;
-    		top: 100px;  /* Decrease the top value to move the button higher */
-    		font-size: 24px;
-		}
+/* Custom background color and padding for the card */
+.custom-card {
+    background-color: #ffdd93; /* Soft yellow background */
+    margin: 0px 50px 50px 50px auto;
+    padding: 40px 40px 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Adjust width as needed */
+    max-width: 1000px; /* Limit the maximum size of the card */
+}
+
+/* Profile container styling */
+.profile-container {
+	margin-top: 10px;
+	text-align: center;
+}
         
-        /* Card container styling */
-        .card-container {
-            margin-top: 10px;
-        }
+/* Profile image style */
+.profile-container img.profile-image {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 3px solid #ddd;
+	margin-bottom: 10px;
+}
+
+.back-button {
+	position: absolute;
+	left: 10px;
+	top: 70px;  /* Decrease the top value to move the button higher */
+	font-size: 24px;
+}
+        
+/* Card container styling */
+.card-container {
+	margin-top: 10px;
+}
+
+.d-grid {
+	margin-top: 30px;
+}

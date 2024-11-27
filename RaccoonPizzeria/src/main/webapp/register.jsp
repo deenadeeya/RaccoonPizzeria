@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raccoon Pizzeria - Register</title>
+  <title>Register</title>
   <link rel="stylesheet" href="./css/headerstyles.css">
   <link rel="stylesheet" href="./css/registerstyles.css">
 </head>
@@ -25,7 +25,8 @@
     </header>
 
 
-    <a href="menu.html" class="back-to-menu">&#8592; Back to Menu</a>
+    <!-- Back to Home Link -->
+    <a href="<%= request.getContextPath() %>/home.jsp" class="back-to-home">&#8592; Back to Home</a>
 
     <div class="login-container">
         <h1>CREATE AN ACCOUNT</h1>
