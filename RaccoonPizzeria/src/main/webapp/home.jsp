@@ -6,44 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raccoon Pizzeria</title>
+    <link rel="stylesheet" href="./css/headerstyles.css">
     <style>
-        /* General styles */
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #ffffff;
-        }
-        /* Header styles */
-        header {
-            background-color: #ff6f3c;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 20px;
-        }
-        header img {
-            width: 50px;
-            height: 50px;
-        }
-        header nav a {
-            text-decoration: none;
-            color: white;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-        header nav a:hover {
-            text-decoration: underline;
-        }
-        header .cart-icons {
-            display: flex;
-            align-items: center;
-        }
-        header .cart-icons i {
-            margin-left: 15px;
-            font-size: 20px;
-            cursor: pointer;
-        }
 
         /* Hero section */
         .hero-section {

@@ -1,0 +1,31 @@
+/* Custom background color for container */
+		.custom-card {
+            background-color: #ffdd93;; 
+        }
+        
+        /* Profile container styling */
+        .profile-container {
+            margin-top: 0px;
+            text-align: center;
+        }
+        
+        /* Profile image style */
+        .profile-container img.profile-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        .back-button {
+   			position: absolute;
+    		left: 10px;
+    		top: 100px;  /* Decrease the top value to move the button higher */
+    		font-size: 24px;
+		}
+        
+        /* Card container styling */
+        .card-container {
+            margin-top: 10px;
+        }

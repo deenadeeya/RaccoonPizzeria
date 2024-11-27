@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raccoon Pizzeria</title>
     <!-- Single CSS Link -->
+    <link rel="stylesheet" href="./css/headerstyles.css">
     <link rel="stylesheet" href="./css/loginstyles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spicy+Rice">
 </head>
