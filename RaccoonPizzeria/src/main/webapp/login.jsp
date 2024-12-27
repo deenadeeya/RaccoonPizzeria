@@ -14,7 +14,7 @@
 	<header>
         <img src="./images/brandlogo.png" alt="Raccoon Logo">
         <nav>
-            <a href="#">Home</a>
+            <a href="home.jsp">Home</a>
             <a href="#">Menu</a>
             <a href="#">Promo</a>
             <a href="#">More</a>

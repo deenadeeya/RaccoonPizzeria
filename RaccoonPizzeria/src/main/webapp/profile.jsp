@@ -13,7 +13,7 @@
 		<header>
 	        <img src="./images/brandlogo.png" alt="Raccoon Logo">
 	        <nav>
-	            <a href="#">Home</a>
+	            <a href="home.jsp">Home</a>
 	            <a href="#">Menu</a>
 	            <a href="#">Promo</a>
 	            <a href="#">More</a>
@@ -24,6 +24,7 @@
 	            <i class="fa fa-paper-plane"></i>
 	        </div>
 	    </header>
+	    
 	    
 	    <div class="profile-container"><h2 class="mt-2">Welcome User</h2></div>
 	    <div class="container">
