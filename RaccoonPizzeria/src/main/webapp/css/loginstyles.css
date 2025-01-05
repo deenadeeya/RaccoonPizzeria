@@ -11,7 +11,7 @@
     text-align: center;
   }
   
-  h1 {
+  .login-container h1 {
     color: #ea6e19;
     font-size: 3rem;
     margin-bottom: 20px;

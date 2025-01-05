@@ -9,21 +9,26 @@
 </head>
 
 <body>
-    <header>
-        <img src="./images/brandlogo.png" alt="Raccoon Logo">
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Menu</a>
-            <a href="#">Promo</a>
-            <a href="#">More</a>
-        </nav>
-        <div class="cart-icons">
-            <i class="fa fa-user"></i>
-            <i class="fa fa-shopping-cart"></i>
-            <i class="fa fa-paper-plane"></i>
+   <!-- Header -->
+ 	<div class="flex-container">
+    	<div class="brand-header">
+            <img src="./images/brandlogo.png" alt="Raccoon Logo">
+            <h1>RACCOON PIZZERIA</h1>
         </div>
-    </header>
+ 	</div>
+        <!-- Top rectangle: Logo and name -->
+        
 
+	 <section class="nav-bar">
+        <!-- White navigation bar -->
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Menu</a>
+                <a href="#">Promo</a>
+                <a href="#">More</a>
+            </nav>
+     </section> 
+    
 
     <!-- Back to Home Link -->
     <a href="<%= request.getContextPath() %>/home.jsp" class="back-to-home">&#8592; Back to Home</a>
