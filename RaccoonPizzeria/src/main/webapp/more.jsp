@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>More</title>
     <link rel="stylesheet" href="./css/headerstyles.css">
+    <link rel="stylesheet" href="./css/morestyles.css">
     <script src="./js/dropdown.js"></script>
-
     <style>
-    
-        /* Hero section */
-        .hero-section {
+    	.hero-section {
             text-align: center;
             color: white;
         }
@@ -19,25 +17,8 @@
             width: 100%;
             height: auto;
         }
-        .hero-section h1 {
-            margin-top: 20px;
-            font-size: 2.5rem;
-            color: #000;
-        }
-
-        /* Promo images */
-        .promo-section {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            padding: 20px;
-        }
-        .promo-section img {
-            width: 45%;
-            height: auto;
-            border-radius: 10px;
-        }
     </style>
+    
 </head>
 <body>
    <!-- Header -->
@@ -54,6 +35,7 @@
         	<div class="dropdown-menu">
 	            <a href="register.jsp">Register</a>
 	            <a href="login.jsp">Login</a>
+	            
         	</div>
     	</div>
     	
@@ -66,17 +48,30 @@
 	    </nav>
 	</div>
 	
-    <!-- Hero Section -->
+    
+     <!-- Hero Section -->
     <section class="hero-section">
         <img src="./images/pizza-banner.jpg" alt="Pizza">
-        <h1>FIND YOUR BEST IN THE RACCOONERIA</h1>
     </section>
+     
+     <section class="about">
+     	<h1>ABOUT US</h1>
+     	<h2>Welcome to Raccoon Pizzeria!</h2>
+		<h2>We are a local pizza shop dedicated to serving the best pizza in town. At Raccoon Pizzeria, every slice is crafted with love, using only the freshest ingredients and our signature recipes to ensure every bite is unforgettable.
+		Whether you’re in the mood for a classic Margherita or one of our specialty creations, we’ve got something to satisfy every craving.</h2>
+     </section>
+     
+     <h2 class="more-info">Have questions, feedback, or just want to say hello?</h2>
+     
+     <section class="contact-company">
+     	
+     	<h2>Email us: raccoonpizzeria@gmail.com</h2>
+		<h2>Visit us at: Sri Rampai, Kuala Lumpur</h2>
+		<h1>LOCATE US</h1>
+     </section>
+    
 
-    <!-- Promo Section -->
-    <section class="promo-section">
-        <img src="./images/pizza1.jpg" alt="Promo 1">
-        <img src="./images/pizza1.jpg" alt="Promo 2">
-    </section>
+
 </body>
 
 </html>

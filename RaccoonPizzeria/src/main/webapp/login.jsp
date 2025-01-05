@@ -11,26 +11,33 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spicy+Rice">
 </head>
 <body>
-  <!-- Header -->
- 	<div class="flex-container">
-    	<div class="brand-header">
-            <img src="./images/brandlogo.png" alt="Raccoon Logo">
-            <h1>RACCOON PIZZERIA</h1>
-        </div>
- 	</div>
-        <!-- Top rectangle: Logo and name -->
-        
+   <!-- Header -->
+	<div class="top-header">
+	    <div class="brand-header">
+	        <img src="./images/brandlogo.png" alt="Raccoon Logo">
+	        <h1>RACCOON PIZZERIA</h1>
+	    </div>
+	</div>
 
-	 <section class="nav-bar">
-        <!-- White navigation bar -->
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Menu</a>
-                <a href="#">Promo</a>
-                <a href="#">More</a>
-            </nav>
-     </section> 
-    
+	<div class="main-header">
+	    <div class="person-icon-container">
+        	<img src="./images/person-icon.png" alt="Person Icon" class="person-icon">
+        	<div class="dropdown-menu">
+	            <a href="register.jsp">Register</a>
+	            <a href="login.jsp">Login</a>
+	            <script src="./js/dropdown.js"></script>
+        	</div>
+    	</div>
+    	
+    	<!-- Navigation Bar -->
+	    <nav class="nav-bar">
+	        <a href="home.jsp">Home</a>
+	        <a href="#">Menu</a>
+	        <a href="#">Promo</a>
+	        <a href="more.jsp">More</a>
+	    </nav>
+	</div>
+	
 
 
     <!-- Back to Home Link -->
