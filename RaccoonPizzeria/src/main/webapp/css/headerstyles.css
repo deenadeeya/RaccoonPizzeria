@@ -1,74 +1,61 @@
-body {
-    font-family: 'Arial', Times, serif, sans-serif;
-    background-color: #ffffff;
-    margin: 0;
-    padding: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-
-/* Header styles */
-header {
-    background-color: #ff6f3c;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Centers all content horizontally */
-    padding: 10px 20px; 
-}
-
-header img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px; /* Adds space between the logo and navigation */
-}
-
-/* Align the navigation menu in the center */
-header nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1; /* Makes navigation take up available space for centering */
-}
-
-header nav a {
-    text-decoration: none;
-    color: white;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-header nav a:hover {
-    text-decoration: underline;
-}
-
-/* Adjust cart icons */
-header .cart-icons {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    right: 20px; /* Moves cart icons to the right */
-}
-
-header .cart-icons i {
-    margin-left: 15px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-a.back-to-home {
-    margin-top: 140px; /* Adjust margin as needed (e.g., 20px from all sides) */
-    margin-left: 20px;
-    color: #ff6f3c; /* Customize the text color */
-    text-decoration: none; /* Removes the underline */
-    font-weight: bold; /* Makes the text bold */
-    font-size: 16px; /* Adjust the font size */
-}
-
-a.back-to-home:hover {
-    text-decoration: underline; /* Add an underline on hover */
-    color: #ff3c1e; /* Darken the color slightly on hover */
-}
-
+	body {
+	    font-family: 'Arial', sans-serif;
+	    margin: 0;
+	    padding: 0;
+	    background-color: #ffffff;
+	}
+	
+	/* Flex Container for Header */
+	.flex-container {
+	    background-color: #ff6f3c; /* Top rectangle background */
+	    display: flex;
+	    flex-direction: column; /* Stack content vertically */
+	    align-items: center;
+	    width: 100%;
+	    padding: 10px 0;
+	}
+	
+	/* Brand Header Section */
+	.brand-header {
+	    display: flex;
+	    align-items: center; /* Vertically center logo and text */
+	    justify-content: center; /* Horizontally center content */
+	    color: white;
+	    gap: 10px; /* Add spacing between logo and text */
+	}
+	
+	.brand-header img {
+	    width: 50px;
+	    height: 50px;
+	}
+	
+	.brand-header h1 {
+	    font-size: 30px;
+	    margin: 0;
+	    text-transform: uppercase;
+	}
+	
+	/* Navigation Bar Section */
+	.nav-bar {
+	    background-color: white; /* White bar for navigation */
+	    width: 100%;
+	    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+	    padding: 10px 0;
+	}
+	
+	.nav-bar nav {
+	    display: flex;
+	    justify-content: center; /* Center the links */
+	    gap: 20px; /* Spacing between links */
+	}
+	
+	.nav-bar nav a {
+	    text-decoration: none;
+	    color: #ff6f3c; /* Matches the header color */
+	    font-weight: bold;
+	    font-size: 16px;
+	}
+	
+	.nav-bar nav a:hover {
+	    text-decoration: underline;
+	}
