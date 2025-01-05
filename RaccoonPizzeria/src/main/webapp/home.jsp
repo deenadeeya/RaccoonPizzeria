@@ -7,6 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="./css/headerstyles.css">
     <style>
+    
         /* Hero section */
         .hero-section {
             text-align: center;

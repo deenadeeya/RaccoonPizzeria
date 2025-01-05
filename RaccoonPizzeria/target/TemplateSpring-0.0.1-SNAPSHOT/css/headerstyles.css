@@ -1,0 +1,64 @@
+ body {
+	    font-family: 'Arial', sans-serif;
+	    margin: 0;
+	    padding: 0;
+	    background-color: #ffffff;
+	}
+	
+	/* Flex Container for Header */
+	.flex-container {
+	    background-color: #ff6f3c; /* Top rectangle background */
+	    display: flex;
+	    flex-direction: column; /* Stack content vertically */
+	    align-items: center;
+	    width: 100%;
+	    padding: 10px 0;
+	}
+	
+	/* Brand Header Section */
+	.brand-header {
+	    display: flex;
+	    align-items: center; /* Vertically center logo and text */
+	    justify-content: center; /* Horizontally center content */
+	    color: white;
+	    margin: 10px;
+	    gap: 10px; /* Add spacing between logo and text */
+	}
+	
+	.brand-header img {
+	    width: 50px;
+	    height: 50px;
+	}
+	
+	.brand-header h1 {
+	    font-size: 40px;
+	    margin: 0;
+	    text-transform: uppercase;
+	}
+	
+	/* Navigation Bar Section */
+	.nav-bar {
+	    background-color: white; /* White bar for navigation */
+	    width: 100%;
+	    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+	    padding: 10px 0;
+	}
+	
+	.nav-bar nav {
+	    display: flex;
+	    justify-content: center; /* Center the links */
+	    gap: 20px; /* Spacing between links */
+	}
+	
+	.nav-bar nav a {
+	    text-decoration: none;
+	    color: #ff6f3c; /* Matches the header color */
+	    font-weight: bold;
+	    font-size: 16px;
+	}
+	
+	.nav-bar nav a:hover {
+	    text-decoration: underline;
+	}
+    
+    
