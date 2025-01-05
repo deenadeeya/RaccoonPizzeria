@@ -17,3 +17,5 @@ morestyles.css.
 
 Javascript created;
 more.js
+
+Tips: If css is not working, try clear up the cache of your browser.
