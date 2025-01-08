@@ -42,8 +42,8 @@
     	<!-- Navigation Bar -->
 	    <nav class="nav-bar">
 	        <a href="home.jsp">Home</a>
-	        <a href="#">Menu</a>
-	        <a href="#">Promo</a>
+	        <a href="menu.jsp">Menu</a>
+	        <a href="cart.jsp">Cart</a>
 	        <a href="more.jsp">More</a>
 	    </nav>
 	</div>

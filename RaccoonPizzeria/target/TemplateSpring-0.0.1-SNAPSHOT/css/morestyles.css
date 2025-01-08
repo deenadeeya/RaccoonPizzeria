@@ -1,0 +1,42 @@
+
+.about {
+    text-align: center;
+    margin: 50px 100px;
+}
+
+.about h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.about h2 {
+    color: black;
+    font-size: 15px;
+}
+
+.more-info {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-company {
+    text-align: center;
+    
+}
+
+.contact-company h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.contact-company h2 {
+    color: black;
+    font-size: 15px;
+    margin: 5px;
+}
+
+

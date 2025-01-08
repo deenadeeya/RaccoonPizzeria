@@ -1,3 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,10 +14,10 @@
 </head>
 
 <body>
-    <!-- Header -->
+     <!-- Header -->
 	<div class="top-header">
 	    <div class="brand-header">
-	        <img src="./images/brandlogo.png" alt="Raccoon Logo">
+	        <a href="register.jsp"> <img src="./images/brandlogo.png" alt="Raccoon Logo"> </a>
 	        <h1>RACCOON PIZZERIA</h1>
 	    </div>
 	</div>
@@ -31,20 +35,18 @@
     	<!-- Navigation Bar -->
 	    <nav class="nav-bar">
 	        <a href="home.jsp">Home</a>
-	        <a href="#">Menu</a>
-	        <a href="#">Promo</a>
+	        <a href="menu.jsp">Menu</a>
+	        <a href="cart.jsp">Cart</a>
 	        <a href="more.jsp">More</a>
 	    </nav>
 	</div>
 	
-    
-
-    <!-- Back to Home Link -->
-    <a href="<%= request.getContextPath() %>/home.jsp" class="back-to-home">&#8592; Back to Home</a>
 
     <div class="login-container">
         <h1>CREATE AN ACCOUNT</h1>
-        <form action="registerServlet" method="post" class="login-form">
+
+        <!-- Form: Updated action URL -->
+        <form action="/register" method="post" class="login-form">
             <div class="input-group">
                 <label for="phonenumberEmail">Phone Number / Email</label>
                 <input type="text" id="phonenumberEmail" name="phonenumberEmail" required>
@@ -64,6 +66,13 @@
                 <label for="confirmPassword">Confirm Password</label>
                 <input type="password" id="confirmPassword" name="confirmPassword" required>
             </div>
+
+            <!-- Display error message if provided -->
+            <c:if test="${not empty error}">
+			    <div class="error-message" style="color: red; font-weight: bold;">
+			        ${error}
+			    </div>
+			</c:if>
 
             <button type="submit" class="signup-btn">Sign Up</button>
         </form>

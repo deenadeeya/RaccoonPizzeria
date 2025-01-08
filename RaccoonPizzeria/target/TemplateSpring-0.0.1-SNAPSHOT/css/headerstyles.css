@@ -4,61 +4,102 @@
 	    padding: 0;
 	    background-color: #ffffff;
 	}
-	
-	/* Flex Container for Header */
-	.flex-container {
-	    background-color: #ff6f3c; /* Top rectangle background */
-	    display: flex;
-	    flex-direction: column; /* Stack content vertically */
-	    align-items: center;
-	    width: 100%;
-	    padding: 10px 0;
-	}
-	
-	/* Brand Header Section */
-	.brand-header {
-	    display: flex;
-	    align-items: center; /* Vertically center logo and text */
-	    justify-content: center; /* Horizontally center content */
-	    color: white;
-	    margin: 10px;
-	    gap: 10px; /* Add spacing between logo and text */
-	}
-	
-	.brand-header img {
-	    width: 50px;
-	    height: 50px;
-	}
-	
-	.brand-header h1 {
-	    font-size: 40px;
-	    margin: 0;
-	    text-transform: uppercase;
-	}
-	
-	/* Navigation Bar Section */
-	.nav-bar {
-	    background-color: white; /* White bar for navigation */
-	    width: 100%;
-	    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-	    padding: 10px 0;
-	}
-	
-	.nav-bar nav {
-	    display: flex;
-	    justify-content: center; /* Center the links */
-	    gap: 20px; /* Spacing between links */
-	}
-	
-	.nav-bar nav a {
-	    text-decoration: none;
-	    color: #ff6f3c; /* Matches the header color */
-	    font-weight: bold;
-	    font-size: 16px;
-	}
-	
-	.nav-bar nav a:hover {
-	    text-decoration: underline;
-	}
-    
-    
+
+/* Top orange header */
+
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff6f3c; /* Orange color */
+    width: 100%;
+	padding: 20px 0;
+  
+}
+
+.brand-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-header img {
+    width: 50px;
+    height: 50px;
+}
+
+.brand-header h1 {
+    font-size: 40px;
+    color: white;
+    margin: 0;
+}
+
+/* Main header */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Person icon container */
+.person-icon-container {
+    display: flex;
+    align-items: center;
+    position: relative; /* For dropdown positioning */
+}
+
+.person-icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f2f2f2;
+}
+
+/* Navigation bar */
+.nav-bar {
+    display: flex;
+    gap: 20px;
+    position: absolute; /* Makes sure it's centered */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #ff6f3c;
+    font-weight: bold;
+}
+
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+
+/* Show dropdown menu on hover */
+.person-icon-container:hover .dropdown-menu {
+    display: block;
+}

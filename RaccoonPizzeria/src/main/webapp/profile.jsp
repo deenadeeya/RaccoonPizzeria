@@ -11,10 +11,10 @@
 	</head>
 	
 	<body>
-	 <!-- Header -->
+	  <!-- Header -->
 	<div class="top-header">
 	    <div class="brand-header">
-	        <img src="./images/brandlogo.png" alt="Raccoon Logo">
+	        <a href="register.jsp"> <img src="./images/brandlogo.png" alt="Raccoon Logo"> </a>
 	        <h1>RACCOON PIZZERIA</h1>
 	    </div>
 	</div>
@@ -25,14 +25,15 @@
         	<div class="dropdown-menu">
 	            <a href="register.jsp">Register</a>
 	            <a href="login.jsp">Login</a>
+	            
         	</div>
     	</div>
     	
     	<!-- Navigation Bar -->
 	    <nav class="nav-bar">
 	        <a href="home.jsp">Home</a>
-	        <a href="#">Menu</a>
-	        <a href="#">Promo</a>
+	        <a href="menu.jsp">Menu</a>
+	        <a href="cart.jsp">Cart</a>
 	        <a href="more.jsp">More</a>
 	    </nav>
 	</div>
@@ -41,8 +42,7 @@
 	    
 	    <div class="profile-container"><h2 class="mt-2">Welcome User</h2></div>
 	    <div class="container">
-		    <div class="custom-card">
-		        <a href="home.jsp" class="back-button">&larr;</a>        
+		    <div class="custom-card">      
 		        <!-- Card section -->
 		        <div class="card-container">
 		            <form>

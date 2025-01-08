@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spicy+Rice">
 </head>
 <body>
-   <!-- Header -->
+    <!-- Header -->
 	<div class="top-header">
 	    <div class="brand-header">
-	        <img src="./images/brandlogo.png" alt="Raccoon Logo">
+	        <a href="register.jsp"> <img src="./images/brandlogo.png" alt="Raccoon Logo"> </a>
 	        <h1>RACCOON PIZZERIA</h1>
 	    </div>
 	</div>
@@ -25,23 +25,19 @@
         	<div class="dropdown-menu">
 	            <a href="register.jsp">Register</a>
 	            <a href="login.jsp">Login</a>
-	            <script src="./js/dropdown.js"></script>
+	            
         	</div>
     	</div>
     	
     	<!-- Navigation Bar -->
 	    <nav class="nav-bar">
 	        <a href="home.jsp">Home</a>
-	        <a href="#">Menu</a>
-	        <a href="#">Promo</a>
+	        <a href="menu.jsp">Menu</a>
+	        <a href="cart.jsp">Cart</a>
 	        <a href="more.jsp">More</a>
 	    </nav>
 	</div>
-	
 
-
-    <!-- Back to Home Link -->
-    <a href="<%= request.getContextPath() %>/home.jsp" class="back-to-home">&#8592; Back to Home</a>
 
     <div class="login-container">
         <h1>Login</h1>
