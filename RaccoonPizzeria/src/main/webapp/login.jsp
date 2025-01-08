@@ -19,35 +19,10 @@
 	    </div>
 	</div>
 
-	<div class="main-header">
-	    <div class="person-icon-container">
-        	<img src="./images/person-icon.png" alt="Person Icon" class="person-icon">
-        	<div class="dropdown-menu">
-	            <a href="register.jsp">Register</a>
-	            <a href="login.jsp">Login</a>
-	            
-        	</div>
-    	</div>
-    	
-    	<!-- Navigation Bar -->
-	    <nav class="nav-bar">
-	        <a href="home.jsp">Home</a>
-	        <a href="menu.jsp">Menu</a>
-	        <a href="cart.jsp">Cart</a>
-	        <a href="more.jsp">More</a>
-	    </nav>
-	</div>
-
-
-    <div class="login-container">
-        <h1>Login</h1>
-        <form action="LoginServlet" method="post" class="login-form">
-            <div class="input-group">
-                <label for="phonenumberEmail">Phone Number/ Email</label>
-                <input type="text" id="phonenumberEmail" name="phonenumberEmail" required>
-            </div>
-    
-            <div class="input-group">
+	
+            <div class="login-container">
+            <h2>Login</h2>
+       			<input type="email" id="email" placeholder="Enter your email" required>
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required> <!-- Changed to password type -->
             </div>
@@ -55,5 +30,23 @@
             <button type="submit" class="login-btn">Continue</button>
         </form>
     </div>
+    
+    <script>
+        function login() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Check credentials
+            if (email === 'tansim@gmail.com' && password === '666') {
+                location.href = 'home.jsp'; // Redirect to admin dashboard
+            } else if (email === 'jumana@gmail.com' && password === '000') {
+                location.href = 'customer_dashboard.jsp'; // Redirect to customer dashboard
+            } else {
+                alert('Invalid email or password'); // Show error message
+            }
+        }
+    </script>
+
+    
 </body>
 </html>

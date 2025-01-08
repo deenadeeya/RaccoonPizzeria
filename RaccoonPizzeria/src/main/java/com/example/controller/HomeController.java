@@ -19,53 +19,13 @@ public class HomeController {
         return "home"; // home.jsp
     }
 
-    // Mapping for Registration Page (GET)
-    @RequestMapping("/register")
-    public String showRegistrationPage() {
-        return "register"; // register.jsp
-    }
-
-    // Mapping for Registration Submission (POST)
-    @RequestMapping("/register")
-    public String handleRegistration(@RequestParam("phonenumberEmail") String emailOrPhone,
-                                     @RequestParam("name") String name,
-                                     @RequestParam("password") String password,
-                                     Model model) {
-        if (userDAO.userExists(emailOrPhone)) {
-            model.addAttribute("error", "User already exists!");
-            return "register";
-        }
-
-        User user = new User(emailOrPhone, name, password);
-        if (userDAO.registerUser(user)) {
-            model.addAttribute("success", "Registration successful! Please login.");
-            return "redirect:/login"; // Redirect to login.jsp
-        } else {
-            model.addAttribute("error", "Registration failed! Try again.");
-            return "register";
-        }
-    }
-
-    // Mapping for Login Page (GET)
+    // Mapping for Home Page
     @RequestMapping("/login")
-    public String showLoginPage() {
-        return "login"; // login.jsp
+    public String login() {
+        return "login"; // home.jsp
     }
 
-    // Mapping for Login Submission (POST)
-    @RequestMapping("/login")
-    public String handleLogin(@RequestParam("phonenumberEmail") String emailOrPhone,
-                              @RequestParam("password") String password,
-                              Model model) {
-        if (userDAO.authenticateUser(emailOrPhone, password)) {
-            String userName = userDAO.getUserName(emailOrPhone);
-            model.addAttribute("name", userName);
-            return "profile"; // Redirect to profile.jsp
-        } else {
-            model.addAttribute("error", "Invalid email/phone or password!");
-            return "login"; // Stay on login.jsp
-        }
-    }
+    
 
     // Mapping for Profile Page
     @RequestMapping("/profile")

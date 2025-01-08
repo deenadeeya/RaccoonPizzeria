@@ -52,8 +52,8 @@
 	    <div class="person-icon-container">
         	<img src="./images/person-icon.png" alt="Person Icon" class="person-icon">
         	<div class="dropdown-menu">
-	            <a href="register.jsp">Register</a>
-	            <a href="login.jsp">Login</a>
+	            <a href="${pageContext.request.contextPath}/login" class="checkout-button">Sign Up</a>
+	   
 	            
         	</div>
     	</div>
