@@ -6,15 +6,13 @@ public class MenuItem {
     private String imagePath;
     private double price; // Added field for price
 
-    // Constructor to initialize all fields, including the new price field
-    public MenuItem(String name, String category, String imagePath, double price) {
-        this.name = name;
-        this.category = category;
-        this.imagePath = imagePath;
-        this.price = price;
-    }
+    
 
-    // Getter for name
+    public MenuItem() {
+		// TODO Auto-generated constructor stub
+	}
+
+	// Getter for name
     public String getName() {
         return name;
     }
@@ -34,7 +32,8 @@ public class MenuItem {
         this.category = category;
     }
 
-    // Getter for imagePath
+    
+     // Getter for imagePath
     public String getImagePath() {
         return imagePath;
     }
@@ -42,8 +41,9 @@ public class MenuItem {
     // Setter for imagePath
     public void setImagePath(String imagePath) {
         this.imagePath = imagePath;
-    }
+    } 
 
+    
     // New Getter for price
     // This method returns the price of the menu item.
     public double getPrice() {

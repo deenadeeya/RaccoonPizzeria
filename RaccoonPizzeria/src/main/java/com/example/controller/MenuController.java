@@ -42,5 +42,32 @@ public class MenuController {
 
 	    return "menu"; // Serves menu.jsp
 	}
+	
+	
+	
+	//@RequestMapping("/menu")
+	// public String menu() {
+	    // return "menu.jsp";
+	// }
 
-	}
+	}package com.example.controller;
+	import org.springframework.stereotype.Controller;
+	import org.springframework.ui.Model;
+	import org.springframework.web.bind.annotation.RequestMapping;
+	//import org.springframework.web.bind.annotation.RequestParam;
+
+	import com.example.dao.MenuItemDAO;
+	@Controller
+	public class MenuController {
+		MenuItemDAO menuItemDAO;
+
+		@RequestMapping("/menu")
+		public String showMenu(Model model) {
+			model.addAttribute("pizzas", menuItemDAO.getPizzas());
+	        model.addAttribute("sides", menuItemDAO.getSides());
+	        model.addAttribute("drinks", menuItemDAO.getDrinks());
+		    return "menu"; // Serves menu.jsp
+		}
+
+
+		}

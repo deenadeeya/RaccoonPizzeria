@@ -21,10 +21,10 @@
     
 </head>
 <body>
-   <!-- Header -->
+      <!-- Header -->
 	<div class="top-header">
 	    <div class="brand-header">
-	        <img src="./images/brandlogo.png" alt="Raccoon Logo">
+	        <a href="home.jsp"> <img src="./images/brandlogo.png" alt="Raccoon Logo"> </a>
 	        <h1>RACCOON PIZZERIA</h1>
 	    </div>
 	</div>
@@ -33,7 +33,6 @@
 	    <div class="person-icon-container">
         	<img src="./images/person-icon.png" alt="Person Icon" class="person-icon">
         	<div class="dropdown-menu">
-	            <a href="register.jsp">Register</a>
 	            <a href="login.jsp">Login</a>
 	            
         	</div>
@@ -47,6 +46,7 @@
 	        <a href="more.jsp">More</a>
 	    </nav>
 	</div>
+	
 	
     
      <!-- Hero Section -->
@@ -67,7 +67,7 @@
      	
      	<h2>Email us: raccoonpizzeria@gmail.com</h2>
 		<h2>Visit us at: Sri Rampai, Kuala Lumpur</h2>
-		<h1>LOCATE US</h1>
+		
      </section>
     
 

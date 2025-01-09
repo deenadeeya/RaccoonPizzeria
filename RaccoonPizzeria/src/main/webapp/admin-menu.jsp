@@ -9,7 +9,6 @@
     <title>Menu</title>
     <link rel="stylesheet" href="./css/headerstyles.css">
     <link rel="stylesheet" href="./css/menustyles.css">
- 
     <script src="./js/dropdown.js"></script>
     
     <style>
@@ -64,7 +63,7 @@
 
 	<div class="main-header">
 	    <div class="person-icon-container">
-        	<h1><img src="./images/person-icon.png" alt="Person Icon" class="person-icon">User</h1>
+        	<img src="./images/person-icon.png" alt="Person Icon" class="person-icon">
         	<div class="dropdown-menu">
 	            <a href="login.jsp">Login</a>
 	            

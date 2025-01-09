@@ -1,9 +1,5 @@
-
-
-  /* Center the login container */
-
-  
-  .login-container {
+/* Namespace-specific styles for the login page */
+#login-container {
     width: 100%;
     max-width: 400px;
     margin: 50px auto;
@@ -12,45 +8,38 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-  }
-  
-  .login-container h1 {
+}
+
+#login-container h2 {
     color: #ea6e19;
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  
-  /* Form styles */
-  .login-form {
+    font-size: 2.5rem;
+    margin-bottom: 10px 0px;
+ 
+}
+
+/* Form-specific styles */
+.login-form {
     display: flex;
     flex-direction: column;
-  }
-  
-  .input-group {
-    margin-bottom: 15px;
-    text-align: left;
-  }
-  
-  .input-group label {
-    font-size: 1rem;
-    color: #333;
-  }
-  
-  .input-group input {
+    gap: 15px;
+}
+
+.login-form input {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ddd;
     border-radius: 4px;
     margin-top: 5px;
-  }
-  
-  .input-group input:focus {
+    box-sizing: border-box;
+}
+
+.login-form input:focus {
     border-color: #ea6e19;
     outline: none;
-  }
-  
-  .login-btn {
+}
+
+button {
     background-color: #ea6e19;
     color: white;
     font-size: 1.2rem;
@@ -59,27 +48,46 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .login-btn:hover {
-    background-color: #ea6e19;
-  }
-  
-  .signup-link {
+}
+
+button:hover {
+    background-color: #d05d17;
+}
+
+/* Link styles */
+.signup-link {
     margin-top: 20px;
     font-size: 0.9rem;
-  }
-  
-  .signup-link a {
+    text-align: center;
+}
+
+.signup-link a {
     color: #ea6e19;
     text-decoration: none;
-  }
-  
-  .signup-link a:hover {
-    text-decoration: underline;
-  }
+}
 
-  button {
-    font-family: 'Times New Roman', Times, serif, sans-serif;
-  }
-  
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Adjustments for images */
+#login-container img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    #login-container {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    #login-container h2 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
